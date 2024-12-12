@@ -7,11 +7,14 @@ const Navbar = () => {
 
    return (
       <div className='flex items-center justify-between py-5 font-medium'>
-         <img
-            src={assets.sht_life_logo}
-            className='w-36'
-            alt='logo'
-         />
+         <Link to='/'>
+            <img
+               src={assets.sht_life_logo}
+               className='w-36'
+               alt='logo'
+            />
+         </Link>
+
          <ul className='hidden sm:flex gap-7 text-sm text-gray-700'>
             <NavLink
                to='/'
